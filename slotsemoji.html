@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- link to custom css -->
+    <link rel="stylesheet" href="css/slotsstyle.css">
+
+    <!-- link to font awesome  -->
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+</head>
+<body class="slotbody">
+    <nav>
+        <span class="bit">Bit<span class="logo">bet</span></span>
+        <button class="casino" onclick="location.href='casinopage.html'">Casino</button>
+        <button id="myBal" onclick="location.href='withdraw.html'"></button>
+    </nav>
+    <hr>
+    <main>
+        <div class="container">
+            <div class="emoji">
+                <div>
+                    <h2 id="firsth">🍒</h2>
+                </div>
+                <div class="line"></div>
+                <div>
+                    <h2 id="secondh">💎</h2>
+                </div>
+                <div class="line"></div>
+                <div>
+                    <h2 id="thirdh">🍌</h2>
+                </div>
+            </div>
+            <div class="btndiv">
+                <button onclick="reset()" class="play-again">Reset</button>
+            </div>
+        </div>
+        <div class="display">
+            <h1>Bit<span>bet</span></h1>
+            <h3>Spin & Win</h3>
+            <button class="spin" onclick="spin()"><i class="fa fa-refresh" aria-hidden="true"></i></button>
+            <p id="feed">Feedback :</p>
+    </main>
+</body>
+    <script src="JavaScript/slots.js"></script>
+</html>

@@ -1,0 +1,182 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.slotbody,html {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/slotsbg.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    height: 100vh;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px 0px;
+}
+nav>.bit{
+    color: #f5b041;
+    font-weight: 700;
+    font-size: 30px;
+}
+.logo{
+    color: #e82a33;
+}
+nav>button{
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    margin-left: 20px;
+    border: none;
+    background-color: #e82a33;
+    padding: 10px;
+    border-radius: 8px;
+}
+.navspan{
+    text-decoration: none !important;
+    color: white;
+    border-bottom: none;
+
+}
+nav>button:hover{
+    background: linear-gradient(90deg, #e82a33, #f5b041);
+    transition: 0.3s;
+}
+
+main{
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    margin-top: 40px;
+}
+.container{
+    /* background-color: red; */
+    width: 50%;
+}
+.emoji{
+    border-top: 10px #e82a33 solid;
+    border-bottom: 10px #e82a33 solid;
+    border-right: 10px #f5b041 solid;
+    border-left: 10px #f5b041 solid;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 25px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/slotsbg.png");
+}
+div>h2{
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.display{
+    height: 100vh;
+    text-align: center;
+}
+.display span{
+    color: #e82a33;
+    font-size: 4.5rem;
+}
+.display>h1{
+    font-size: 6.5rem;
+    text-align: center;
+    font-weight: 900;
+    color: #f5b041;
+}
+.display>h3{
+    font-size: 1.5rem;
+    text-align: center;
+    background: linear-gradient(90deg, #e82a33, #f5b041);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    bottom: 100px;
+}
+.display>button{
+    background: #e82a33;
+        padding: 10px 20px;
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+    border: none;
+    font-size: 4.5rem;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    bottom: 80px;
+}
+.display>button:hover{
+    background: linear-gradient(90deg, #f5b041, #e82a33);
+    transition: 0.3s;
+}
+.btndiv{
+    text-align: center;
+    margin-top: 30px;
+}
+.btndiv>button{
+    background: #e82a33;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+}
+.btndiv>button:hover{
+    background: linear-gradient(90deg, #f5b041, #e82a33);
+    transition: 0.3s;
+}
+.line{
+    width: 2px;
+    height: 100%;
+    background-color: #f5b041;
+    margin: 0 20px;
+}
+.display>p{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+    position: relative;
+    bottom: 70px;
+    text-align: start;
+}
+@media (max-width: 1028px) {
+    main{
+        flex-direction: column;
+    }
+    .container{
+        height: 40vh;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .emoji{
+        height: 100%;
+        width: 100%;
+    }
+    .display>h1,h3{
+        display: none;
+    }
+    .display{
+        text-align: center;
+        position: relative;
+        top: 200px;
+        margin: 0 auto;
+    }
+    .display p{
+        text-align: center;
+    }
+    .display>button{
+        font-size: 3rem;
+        height: 100px;
+        width: 100px;
+    }
+    .display p{
+        font-size: 1rem;
+    }
+}

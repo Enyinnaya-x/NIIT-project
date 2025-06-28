@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casino</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- link to font awesome  -->
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+    <!-- link to poppins font  -->
+    <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<!-- link to document logo  -->
+<link rel="icon" href="images/icons8-dice-64.png">
+</head>
+<body class="casinobody">
+    <nav>
+        <span class="bit">Bit<span class="logo">bet</span></span>
+        <button class="casino" onclick="location.href='First-Landing-Page.html'">Home</button>
+        <div class="userdiv">
+            <i class="fa fa-user" aria-hidden="true"></i><button id="usernav"></button>
+        </div>
+    </nav>
+    <hr>
+
+    <div class="textdiv">
+        <h1>Welcome to <span class="bit">Bit<span class="logo">bet</span></span></h1>
+
+        <div class="usericon">
+            <i class="fa fa-user main-fa" aria-hidden="true"></i>
+        </div>
+        <p class="greet">Hello <span id="user_name"></span></p>
+    </div>
+
+    <div class="featureddiv">
+        <div class="message">
+            <h2>Featured Games</h2>
+        </div>
+        <div class="containergames">
+            <div class="dicegame">
+                <h3>Dice Game</h3>
+                <img src="images/diceshow.jpg" alt="Dice Game">
+                <button onclick="location.href='dice.html'">Play Now<i class="fa fa-trophy" aria-hidden="true"></i></button>
+            </div>
+            <div class="dicegame">
+                <h3>Slots Game</h3>
+                <img src="images/slotsshow.jpg" alt="Slots Game">
+                <button onclick="location.href='slotsemoji.html'">Play Now<i class="fa fa-trophy" aria-hidden="true"></i></button>
+            </div>
+            <div class="dicegame">
+                <h3>Guess the Number Game</h3>
+                <img src="images/guessbg.png" alt="Guess the Number Game">
+                <button onclick="location.href='guess.html'">Play Now<i class="fa fa-trophy" aria-hidden="true"></i></button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer1">
+            <div class="footerlogo">
+                <img src="images/icons8-dice-64.png" alt=""> <span class="bit">Bit<span class="logo">bet</span></span>
+            </div>
+            <p>© 2025 BitBet. All rights reserved.
+            Your trusted home for exciting, fair, and secure gaming. Play smart. Play safe.</p>
+        </div>
+        <div class="footer2">
+            <span>Company</span>
+            <div class="footerlinks">
+                <a href="#"><small>Home</small></a>
+                 <a href="#"><small>About</small></a>
+                 <a href="login.html"><small>Login</small></a>
+            </div>
+        </div>
+        <div class="footer2">
+            <span>Support</span>
+            <div class="footerlinks">
+                <a href="#"><small>FAQ</small></a>
+                 <a href="#"><small>Contact Us</small></a>
+                 <a href="#"><small>Our Team</small></a>
+                 <a href="#"><small>Testimonial</small></a>
+            </div>
+        </div>
+        <div class="footer2">
+            <span>Follow Us</span>
+            <div class="footerlinks socialmedia">
+                <div class="footer3">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                </div>
+                <div class="footer3">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                </div>
+                <div class="footer3">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                </div>
+                <div class="footer3">
+                    <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+    <script src="JavaScript/casino.js"></script>
+</html>

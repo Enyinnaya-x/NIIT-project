@@ -1,0 +1,1177 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+body {
+    background-color: #171010e0;
+}
+
+/* body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0);
+    z-index: 1;
+    pointer-events: none;
+} */
+
+.bg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./NiitProjectImages/bgimg3.jpg');
+    height: 110vh;
+    width: 100%;
+    /* background-repeat: no-repeat; */
+    background-size: contain;
+    z-index: 99;
+}
+
+.section1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #171010;
+    height: 50px;
+    /* border: 2px solid black; */
+    padding: 0 0px 0 0px;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    z-index: 1000;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+    /* margin: 10px 0 0 0;
+    border-radius: 20px; */
+}
+
+.fix {
+    clear: both;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 70px;
+    padding-left: 30px;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    height: 100%;
+    font-family: Poppins, sans-serif;
+    /* border: 2px solid red; */
+    padding: 0 50px 0 30px;
+    margin: 0 30px 0 0;
+}
+
+.main-nav li {
+    list-style: none;
+    height: 100%;
+    width: 100%;
+}
+
+.main-nav a {
+    text-decoration: none;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    color: white;
+}
+
+.a-text:hover {
+    background: linear-gradient(90deg, #e82a33, #f5b041);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+
+.a-text {
+    display: flex;
+    align-items: center;
+}
+
+.btntext1 {
+    padding: 8px 20px;
+    background-color: #e8252f;
+    border: none;
+    border-radius: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btntext2 {
+    padding: 8px 20px;
+    background-color: #e8252f;
+    border: none;
+    border-radius: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.open-sidebar {
+    display: none;
+}
+
+.close-sidebar {
+    display: none;
+}
+
+#sidebar {
+    display: none;
+}
+
+.sptext1 {
+    color: gold;
+    font-family: Roboto;
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    padding-left: 10px;
+}
+
+.sptext2 {
+    font-family: Edu NSW ACT Hand Precursive;
+    font-size: 25px;
+    color: red;
+    display: flex;
+    align-items: center;
+}
+
+.imglogo {
+    height: 45px;
+}
+
+.overlay {
+    display: none;
+}
+
+.sec2bigbox {
+    /* border: 2px solid black; */
+    float: left;
+    padding: 20px;
+}
+
+.sec2smbox {
+    /* border: 2px solid blueviolet; */
+    height: 100%;
+    width: 100%;
+    padding: 50px;
+    overflow: hidden;
+    position: relative;
+}
+
+.img1 {
+    position: absolute;
+    bottom: -5%;
+    right: 8%;
+    width: 95px;
+    height: auto;
+}
+
+.img2 {
+    width: 100px;
+    height: auto;
+    position: absolute;
+    top: 0;
+    right: 8px;
+}
+
+.sec2smbox h1 {
+    font-size: 45px;
+    word-spacing: normal;
+    line-height: 1.3;
+    color: white;
+    font-weight: bolder;
+    font-family: Roboto;
+}
+
+.sec2smbox p {
+    font-size: 10px;
+    line-height: 1.2;
+    color: white;
+    word-spacing: normal;
+    font-family: Poppins;
+    padding: 0 0 30px 0;
+}
+
+.sptext3 {
+    color: gold;
+    font-size: 20px;
+
+}
+
+.sptext4 {
+    color: red;
+    font-size: 18px;
+
+}
+
+.btntext3 {
+    padding: 10px 20px;
+    border-radius: 20px;
+    /* background-color: #e8252f; */
+    background: linear-gradient(to right, peachpuff, #ff2d55);
+    border: none;
+}
+
+.btntext3 a {
+    color: #171010;
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.sec2smbox1 {
+    /* border: 2px solid blueviolet; */
+    height: 100%;
+    width: 100%;
+    padding: 40px;
+    overflow: hidden;
+    position: relative;
+}
+
+.imgsec2 {
+    height: 100%;
+    width: 100%;
+}
+
+.bigtextbox {
+    /* border: 2px solid black; */
+    /* height: 50vh; */
+    float: left;
+    padding: 5px;
+    text-align: center;
+    margin-top: -40px;
+}
+
+.smalltextbox {
+    /* border: 2px solid salmon; */
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+    padding: 10px 70px;
+    border-radius: 10px;
+    background-color: rgba(128, 128, 128, 0.941);
+    font-family: Poppins;
+    position: relative;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.7);
+
+}
+
+.smalltextbox::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    pointer-events: none;
+    z-index: 1;
+}
+
+
+.textbox {
+    padding: 0 200px;
+    /* overflow: hidden; */
+}
+
+.sptext5 {
+    font-size: 12px;
+    font-weight: 800;
+    color: white;
+    word-spacing: normal;
+    z-index: 2;
+}
+
+.imgsec3 {
+    height: 40px;
+}
+
+
+.section5 {
+    /* border: 2px solid black; */
+    overflow: hidden;
+    padding: 30px;
+}
+
+.sec5bigbox {
+    /* border: 2px solid red; */
+    /* height: 70vh; */
+    float: left;
+    padding: 5px;
+    position: relative;
+}
+
+.sec5smallbox {
+    /* border: 2px solid blue; */
+    height: 100%;
+    width: 100%;
+    font-family: Nunito;
+    padding: 30px 0 20px 60px;
+    color: white;
+    position: relative;
+
+}
+
+.sec5smallbox1 {
+    /* border: 2px solid blue; */
+    height: 60vh;
+    width: 33vw;
+    border-radius: 30px;
+    overflow: hidden;
+    object-fit: cover;
+    position: relative;
+}
+
+
+.sec5smallbox1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.sec5smallbox1 img {
+    height: 100%;
+    width: 100%;
+}
+
+.sec5smallbox h2 {
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 2;
+    /* /* display: flex;
+    align-items: center; */
+}
+
+.spsec5 {
+    font-family: Roboto;
+    color: gold;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.spsec5-1 {
+    font-family: Edu NSW ACT Hand Precursive;
+    color: red;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.sec5smallbox p {
+    font-size: 12px;
+    line-height: 1.7;
+    font-weight: 400;
+}
+
+.btnsec5 {
+    z-index: 3;
+    position: absolute;
+    top: 40%;
+    left: 32%;
+    padding: 16px;
+    border-radius: 50%;
+    border: none;
+    background: linear-gradient(to right, peachpuff, #ff2d55);
+    cursor: pointer;
+
+}
+
+
+.btnsec5 i {
+    font-size: 18px;
+    color: gold;
+}
+
+.sec5-2 {
+    /* border: 2px solid red; */
+    overflow: hidden;
+    padding: 0px 30px;
+}
+
+.sec5bigboxes2 {
+    /* border: 2px solid green; */
+    float: left;
+    position: relative;
+}
+
+.se5smallboxes2 {
+    /* border: 2px solid black; */
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    padding: 0 0 0 0px;
+    position: relative;
+    font-family: Poppins;
+}
+
+.img3 {
+    position: absolute;
+    width: 140px;
+    height: auto;
+    top: -5%;
+    right: 40%;
+    transform: rotate(-68deg);
+}
+
+.text5 h1 {
+    line-height: 1.5;
+    color: white;
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.spantext5 {
+    font-size: 11px;
+    font-weight: 500;
+    font-family: Poppins;
+    color: white;
+}
+
+.text5 {
+    padding: 0px 0 20px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.text5 input {
+    font-family: Poppins;
+    padding: 15px 30px;
+    text-align: left;
+    width: 70%;
+    border-radius: 10px;
+    overflow: hidden;
+    border: none;
+    font-size: 10px;
+}
+
+.text5 textarea {
+    width: 70%;
+    text-align: left;
+    padding: 10px 20px 25px 20px;
+    border-radius: 10px;
+    font-size: 10px;
+
+}
+
+.text5 button {
+    padding: 8px 22px;
+    border-radius: 20px;
+    border: none;
+    background: linear-gradient(to right, peachpuff, #ff2d55);
+    font-family: Nunito;
+    cursor: pointer;
+}
+
+.text5 button a {
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+}
+
+.img8 {
+    position: absolute;
+    top: 11%;
+    right: -20%;
+    width: 300px;
+    height: auto;
+    z-index: 2;
+}
+
+
+.boxsec6 {
+    /* border: 2px solid blue; */
+    margin-top: 28%;
+    padding: 20px 0;
+
+}
+
+.boxsec6 i {
+    font-size: 28px;
+}
+
+.boxsec6 span {
+    color: white;
+    padding-left: 3px;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.boxsec6 p {
+    font-size: 8px;
+    color: white;
+    padding-left: 30px;
+    font-weight: 500;
+
+}
+
+.sec6 {
+    background-color: #171010;
+}
+
+.sec6boxes {
+    overflow: hidden;
+    position: relative;
+}
+
+.sec6bigbox {
+    /* border: 2px solid brown; */
+    height: 56vh;
+    padding: 40px 170px 40px 170px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.sec6smboxes {
+    /* border: 2px solid blue; */
+    border-bottom: 1px solid gray;
+    height: 100%;
+    width: 25%;
+    /* float: left; */
+    padding: 10px;
+    color: white;
+}
+
+.smboxtext {
+    display: flex;
+    align-items: center;
+    /* gap: 5px; */
+    padding: 0px 0 0 20px;
+}
+
+.sec6smboxes p {
+    font-size: 11px;
+    padding-top: 8px;
+}
+
+.spsec6 {
+    font-size: 26px;
+    font-family: Roboto;
+    font-weight: 500;
+    color: gold;
+}
+
+.spsec6-1 {
+    color: red;
+    font-weight: 400;
+    font-family: Edu NSW ACT Hand Precursive;
+    font-size: 18px;
+}
+
+.smboxtext1 {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 20px 10px;
+    font-family: Nunito;
+    gap: 5px;
+}
+
+.smboxtext1 a {
+    font-size: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.smboxtext1 a:hover {
+    transform: translateX(10px);
+    font-size: 12px;
+    color: #e8252f;
+}
+
+.smboxtext1 h3 {
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.smboxtext2 {
+    padding: 20px 0;
+    font-family: Nunito;
+}
+
+.smboxtext2 i {
+    margin: 0 2px;
+    border: 1px solid white;
+    padding: 8px;
+    font-size: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.smboxtext2 h3 {
+    font-size: 14px;
+}
+
+.last {
+    color: white;
+    width: 100%;
+    flex-basis: 100%;
+    text-align: center;
+    padding-top: 4px;
+}
+
+.last span {
+    font-size: 12px;
+    margin-right: 10rem;
+
+}
+
+.last a {
+    font-size: 12px;
+    color: white;
+    text-decoration: none;
+    padding-left: 8px;
+}
+
+.img6 {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    transform: translate(-50%);
+    max-width: 270px;
+    height: 70vh;
+    display: block;
+    /* border: 2px solid blueviolet; */
+    margin: 0;
+}
+
+.img7 {
+    position: absolute;
+    top: 10%;
+    right: 7%;
+    transform: translate(50%);
+    height: 70vh;
+    max-width: 270px;
+    display: block;
+    /* border: 2px solid blueviolet; */
+    margin: 0;
+    padding: 0;
+}
+
+.auto-rotate {
+    opacity: 1;
+    animation: auto-rotate 7s linear infinite;
+}
+
+@keyframes auto-rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fade-up {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-up {
+    animation: fade-up 2s ease-out forwards;
+    opacity: 0;
+}
+
+.delay-1 {
+    animation-delay: 0.2s;
+}
+
+.delay-2 {
+    animation-delay: 0.6s;
+}
+
+.delay-3 {
+    animation-delay: 1s;
+}
+
+
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1.5s ease-in-out, transform 0.6s ease-in-out;
+}
+
+.fade-in-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.auto-show {
+    opacity: 0;
+    transform: translateX(30%);
+    transition: opacity 1s ease-in-out, transform 1s ease-out;
+}
+
+.auto-show.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #c41c23;
+    color: white;
+    padding: 5px 18px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: Poppins;
+    font-weight: bolder;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+    z-index: 1000;
+}
+
+.back-to-top.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.back-to-top:hover {
+    opacity: 1;
+    background: #c41c23;
+}
+
+
+@media only screen and (max-width:1000px) {
+
+    .bg{
+        height: 60vh;
+    }
+
+    .sec6bigbox{
+        height: 25vh;
+    }
+    .img7{
+        height: 30vh;
+        top: 5%;
+    }
+    
+    .fade-in-up,
+    .auto-show {
+        transition: none;
+    }
+
+    .smalltextbox {
+        padding: 30px 5px;
+    }
+
+    .smalltextbox span {
+        padding: 0 10px;
+    }
+
+    .bigtextbox {
+        padding: 5px;
+    }
+
+    .textbox {
+        padding: 0;
+    }
+
+    .imgsec2 {
+        display: none;
+    }
+
+    .sec2bigbox {
+        /* display: none; */
+        width: 100%;
+    }
+
+    .sec2smbox1 {
+        padding: 10px;
+    }
+
+    .sec5smallbox1 {
+        width: 45vw;
+        height: 40vh;
+    }
+
+    .btnsec5 {
+        left: 45%;
+        transform: translate(50%);
+    }
+
+    .sec5smallbox {
+        padding: 0;
+    }
+
+    .text5 {
+        padding: 0 0 10px 0;
+    }
+
+    .img8 {
+        display: none;
+    }
+
+    .sec6bigbox {
+        padding: 5px 60px 30px 20px;
+        height: 32vh;
+    }
+
+    .img6 {
+        left: 3%;
+        height: 30vh;
+    }
+
+    .img2 {
+        display: none;
+    }
+
+}
+
+
+
+
+@media only screen and (max-width:650px) {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    .col-sm-1 {
+        width: 8.33%;
+    }
+
+    .col-sm-2 {
+        width: 16.66%;
+    }
+
+    .col-sm-3 {
+        width: 25%;
+    }
+
+    .col-sm-4 {
+        width: 33.33%;
+    }
+
+    .col-sm-5 {
+        width: 41.66%;
+    }
+
+    .col-sm-6 {
+        width: 50%;
+    }
+
+    .col-sm-7 {
+        width: 58.33%;
+    }
+
+    .col-sm-8 {
+        width: 66.66%;
+    }
+
+    .col-sm-9 {
+        width: 75%;
+    }
+
+    .col-sm-10 {
+        width: 83.33%;
+    }
+
+    .col-sm-11 {
+        width: 91.66%;
+    }
+
+    .col-sm-12 {
+        width: 100%;
+    }
+
+    .fade-in-up,
+    .auto-show {
+        transition: none ;
+    }
+
+    .main-nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 150px;
+        gap: 20px;
+        padding: 0px 0 30px 10px;
+        display: flex;
+        flex-direction: column;
+        height: 45vh;
+        align-items: flex-start;
+        margin: 0;
+        background-color: #1710109e;
+        backdrop-filter: blur(5px);
+        z-index: 999;
+        overflow: hidden;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        transition: .75s ease-in-out;
+        /* display: none; */
+    }
+
+    .close-sidebar {
+        display: block;
+        margin-bottom: 8px;
+        font-size: 25px;
+        margin-left: 100px;
+        cursor: pointer;
+        color: white;
+    }
+
+    .open-sidebar {
+        display: block;
+        padding: 0 30px;
+        color: white;
+    }
+
+    .main-nav a {
+        color: white;
+        gap: 1px;
+        /* padding: 0; */
+        margin-bottom: 20px;
+        height: 100%;
+        width: 100%;
+        font-weight: 700;
+        cursor: pointer;
+    }
+
+    .main-nav li {
+        height: 0;
+        /* padding: 20px; */
+    }
+
+    .a-text {
+        /* margin-left: 50px; */
+        padding-left: 10px;
+        font-size: 14px;
+        padding-top: 0;
+        /* margin-bottom: 10px; */
+
+    }
+
+    .a-text:hover {
+        background-color: #1710109e;
+    }
+
+    .btntext1,
+    .btntext2 {
+        margin-top: 5px;
+        padding: 20px 20px;
+
+    }
+
+    #sidebar:checked~.main-nav {
+        /* display: flex; */
+        right: 0;
+    }
+
+    #sidebar:checked~.overlay {
+        display: block;
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 5;
+    }
+
+    .img {
+        display: none;
+    }
+
+    .sec2smbox {
+        /* border: 2px solid blueviolet; */
+        padding: 20px 20px;
+    }
+
+    .sec2smbox h1 {
+        font-size: 30px;
+        line-height: 1.5;
+    }
+
+    .bg {
+        height: 90vh;
+    }
+
+    .bigtextbox {
+        /* float: none; */
+        padding: 5px;
+        margin: 0;
+    }
+
+    .textbox {
+        padding: 10px;
+    }
+
+    .smalltextbox {
+        padding: 0;
+    }
+
+    .sec2bigbox {
+        width: 100%;
+    }
+
+    .sec5smallbox {
+        padding: 0;
+    }
+
+    .sec5smallbox1 {
+        width: 75vw;
+        height: 40vh;
+    }
+
+    .btnsec5 {
+        left: 30%;
+        transform: translate(50%);
+    }
+
+    .text5 {
+        padding: 0;
+    }
+
+    .boxsec6 {
+        margin-top: 10px;
+    }
+
+    .img8 {
+        width: 200px;
+        right: -15%;
+    }
+
+    .sec6bigbox {
+        padding: 0 0 50px 0;
+        height: 30vh;
+    }
+
+    .img6,
+    .img7 {
+        display: none;
+    }
+
+    .smboxtext {
+        padding-left: 5px;
+    }
+
+    .sec6smboxes {
+        padding: 0;
+        border: none;
+    }
+
+    .smboxtext1 h3 {
+        font-size: 11px;
+    }
+
+    .smboxtext1 a {
+        font-size: 9px;
+    }
+
+    .smboxtext2 h3 {
+        font-size: 11px;
+
+    }
+
+    .smboxtext2 i {
+        font-size: 9px;
+    }
+
+    .img2 {
+        display: none;
+    }
+
+    .logo {
+        margin-left: 20px;
+    }
+
+    .img3 {
+        right: 8px;
+    }
+    .smboxtext img{
+        height: 40px;
+    }
+    .smboxtext{
+        padding: 10px 0 0 10px;
+    }
+    .bg{
+        height: 50vh;
+    }
+    .last{
+        display: none;
+    }
+}

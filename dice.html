@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Game</title>
+
+    <!-- link to custom css  -->
+    <link rel="stylesheet" href="styles.css">
+<!-- link to document logo  -->
+<link rel="icon" href="images/icons8-dice-64.png">
+    
+</head>
+<body class="dicebody">
+    <nav>
+        <span class="bit">Bit<span class="logo">bet</span></span>
+        <button class="casino" onclick="location.href='casinopage.html'">Casino</button>
+        <button id="myBal" onclick="location.href='withdraw.html'"></button>
+    </nav>
+    <hr>
+    <div class="textdiv">
+        <h1>Predict the Die Number</h1>
+        <p>Select your prediction from the die roll. Choose a number between 1-6.</p>
+    </div>
+    <main class="main anothermain">
+        <input type="button" id="myinput"  onclick="roll(1)" value="1"> 
+        <input type="button" id="myinput" onclick="roll(2)" value="2"> 
+        <input type="button" id="myinput" onclick="roll(3)" value="3"> 
+        <input type="button" id="myinput" onclick="roll(4)" value="4"> 
+        <input type="button" id="myinput" onclick="roll(5)" value="5"> 
+        <input type="button" id="myinput" onclick="roll(6)" value="6"> 
+    </main>
+    <div class="dicediv">
+        <img src="images/die1.jpg" alt="" id="myimg"> <br> <br>
+        <p id="feed">Feedback :</p>
+         <input type="number" placeholder="Bet Amount" id="betAmt" class="amtinput">
+        <div class="btndiv">
+            <button onclick="reset()">Reset</button>
+        </div>
+    </div>
+</body>
+<script src="JavaScript/dice.js"></script>
+</html>

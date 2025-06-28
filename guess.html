@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the game</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- link to document logo  -->
+    <link rel="icon" href="images/icons8-dice-64.png">
+</head>
+<body class="guessbody">
+     <nav>
+        <span class="bit">Bit<span class="logo">bet</span></span>
+        <button class="casino" onclick="location.href='casinopage.html'">Casino</button>
+        <button id="myBal" onclick="location.href='withdraw.html'"></button>
+    </nav>
+    <hr>
+
+    <div class="main">
+        <main>
+            <h1>Guess the Number</h1>
+            <p>I'm thinking of number between 1 and 10. Can you guess what it is?</p>
+        </main>
+        <h2 id="mylabel">0</h2>
+        <input type="number" id="myinput" placeholder="Enter a number">
+        <button onclick="guess()">Guess!</button>
+
+        <p id="feed">Feedback :</p>
+        <div class="btndiv">
+            <button onclick="reset()">Play Again</button> <button onclick="location.href='casinopage.html'">Back to casino</button>
+        </div>
+    </div>
+</body>
+    <script src="JavaScript/guess.js"></script>
+</html>

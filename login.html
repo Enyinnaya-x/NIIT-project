@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Login | Casino Portal</title>
+        <!-- Link to the external CSS file -->
+        <link rel="stylesheet" href="css/login.css" />
+
+        <!-- link to document logo  -->
+        <link rel="icon" href="images/icons8-dice-64.png">
+    </head>
+    <body>
+        <div class="card">
+            <h1>🎰 Casino Login</h1>
+            <div class="form-control">
+                <label for="myMail">Email</label>
+                <input
+                    type="text"
+                    id="myMail"
+                    placeholder="Enter your email"
+                    required
+                />
+                <small id="big"></small>
+            </div>
+            <div class="form-control">
+                <label for="pass">Password</label>
+                <input
+                    type="password"
+                    id="pass"
+                    placeholder="••••••••"
+                    required
+                />
+                <span class="toggle-pass" onclick="togglePassword()">👁️</span>
+                <small id="small"></small>
+            </div>
+            <button class="btn" onclick="Login()">Login</button>
+            <div class="footer-links">
+                <a href="#">Forgot Password?</a>
+            </div>
+            <div class="social-icons">
+                <p>Login with</p>
+                <span class="icon"
+                    ><img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg"
+                        alt="Google"
+                /></span>
+                <span class="icon"
+                    ><img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg"
+                        alt="Facebook"
+                /></span>
+                <span class="icon"
+                    ><img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                        alt="GitHub"
+                /></span>
+            </div>
+        </div>
+
+        <!-- Link to the external JavaScript file -->
+        <script src="JavaScript/login.js"></script>
+    </body>
+</html>

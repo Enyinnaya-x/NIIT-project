@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Withdraw</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- link to document logo  -->
+    <link rel="icon" href="images/icons8-dice-64.png">
+</head>
+<body class="withdrawbody">
+    <nav>
+        <span class="bit">Bit<span class="logo">bet</span></span>
+        <button class="casino" onclick="location.href='casinopage.html'">Casino</button>
+        <button id="myBal" onclick="location.href='withdraw.html'"></button>
+    </nav>
+    <hr>
+    <div class="textdiv">
+        <h1>Withdraw Funds</h1>
+        <p>Withdraw funds from your account. Enter the amount you wish to withdraw.</p>
+    </div>
+    <main>
+        <form id="withdrawForm" class="withdraw-form">
+            <div class="form-group">
+                <label for="account">Account Number:</label>
+                <input type="text" id="account" name="account" required placeholder="Enter Account Number">
+            </div>
+            <div class="form-group">
+                <label for="account">Bank:</label>
+                <select name="" id="choose">
+                    <option value="Opay">Opay</option>
+                    <option value="Palmpay">Palmpay</option>
+                    <option value="GTBank">GTBank</option>
+                    <option value="Kuda MFB">Kuda MFB</option>
+                    <option value="UBA">UBA</option>
+                    <option value="EcoBank">EcoBank</option>
+                    <option value="First Bank">First Bank</option>
+                    <option value="Access Bank">Access Bank</option>
+                    <option value="Moniepoint">Moniepoint</option>
+                    <option value="Fidelity">Fidelity</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="amount">Amount to Withdraw:</label>
+                <input type="number" id="amount" name="amount" required placeholder="Enter Amount">
+            </div>
+            <button type="submit" onclick="withdraw()" id="myWithdraw" class="withdraw-button">Withdraw</button>
+        </form>
+        <div id="feedback" class="note">Note : Withdrawals take time to process and if not received instantly please waith 24hrs before contacting your bank.</div>
+
+    </main>
+    <script src="JavaScript/withdraw.js"></script>
+</body>
+</html>

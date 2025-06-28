@@ -1,0 +1,433 @@
+*{
+    font-family: sans-serif;
+}
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden; 
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px 0px;
+}
+
+nav>.bit {
+    color: #f5b041;
+    font-weight: 700;
+    font-size: 30px;
+}
+nav .userdiv{
+    display: flex;
+    justify-content: space-evenly;
+    width: fit-content;
+    padding-left: 4px ;
+    align-items: center;
+    color: white;
+        font-weight: 600;
+        font-size: 14px;
+        margin-left: 20px;
+        border: none;
+        background-color: #e82a33;
+        border-radius: 8px;
+}
+.logo {
+    color: #e82a33;
+    font-size: 25px
+}
+
+nav>button {
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    margin-left: 20px;
+    border: none;
+    background-color: #e82a33;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.navspan {
+    text-decoration: none !important;
+    color: white;
+    border-bottom: none;
+
+}
+
+nav>button:hover {
+    background: linear-gradient(90deg, #e82a33, #f5b041);
+    transition: 0.3s;
+}
+body{
+    background-color: #171010;
+    color: white;
+}
+.main{
+    margin-top: 60px;
+    text-align: center;
+}
+input{
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid white;
+    width: 30%;
+    background-color: transparent;
+    color: white;
+    font-weight: 600;
+   font-size: 16px;
+}
+h2{
+    font-size: 32px;
+}
+button{
+    background-color: #e82a33;
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+button:hover {
+    background: linear-gradient(90deg, #e82a33, #f5b041);
+}
+.btndiv{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    text-align: center;
+}
+.btndiv>button{
+    background-color: #e82a33;
+    padding: 12px 30px;
+    border-radius: 12px;
+}
+.btndiv>a{
+    background-color: #e82a33;
+    text-decoration: none;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 12px;
+}
+.anothermain{
+    display: flex;
+    justify-content: space-around;
+}
+.anothermain>input{
+    width: 55px;
+    font-size: 16px;
+    border: 2px solid white;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: #e82a33;
+    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.5);
+}
+.guessbody{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/gameguess.png);
+    background-position: center;
+    background-size: cover;
+}
+.dicebody{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/dicebg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.withdrawbody{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/withdrawbg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.casinobody{
+    background: url(images/casinogamebg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.dicediv{
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.dicediv>button{
+    padding: 12px 15px;
+    cursor: pointer;
+}
+.dicediv>img{
+    width: 140px;
+    border-radius: 20px;
+}
+.dicediv>p{
+    font-size: 18px;
+    font-weight: bold;
+}
+.dicediv>button{
+    margin-top: 30px;
+}
+.textdiv{
+    margin-top: 10px;
+    text-align: center;
+}
+.withdraw-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(12px);
+    width: 40%;
+    border-radius: 25px;
+    padding: 20px;
+    margin: 0 auto;
+    color: black;
+}
+label{
+    font-weight: bold;
+    text-align: start;
+    /* font-size: 16px; */
+    margin-right: auto;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    width: 80%;
+    text-align: start;
+}
+.form-group>input{
+    width: 100%;
+    height: 25px;
+    color: black;
+   border: 1px solid rgba(0, 0, 0, 0.2);
+   font-size: 16px;
+}
+input:focus {
+    outline: none;
+    border-color: #e82a33;
+    background: rgba(255, 255, 255, 0.2);
+}
+.form-group>select{
+    width: 105%;
+    background-color: transparent;
+    color: black;
+    height: 45px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+   font-size: 16px;
+}
+.withdraw-button{
+    width: 80%;
+    padding: 12px 10px;
+    font-weight: 600;
+    border-radius: 10px;
+}
+.form-group>select:focus {
+    outline: none;
+    border-color: #e82a33;
+    background: rgba(255, 255, 255, 0.2);
+    }
+.form-group option{
+    background-color: #e82a33;
+}
+.note{
+    margin-top: 40px;
+    text-align: center;
+}
+.main-fa{
+    font-size: 100px !important;
+    margin-right: 10px;
+    color: white;
+}
+
+.usericon{
+    height: 170px;
+    width: 170px;
+    background:  #f5b041;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+
+}
+.featureddiv{
+    text-align: center;
+}
+.message{
+    text-align:start;
+    padding: 0px 20px;
+}
+.message>h2{
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+.containergames{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 0 20px;
+}
+.dicegame{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.dicegame>img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.dicegame>button{
+    margin-top: 30px;
+}
+.fa-trophy{
+    margin-left: 10px;
+}
+.greet{
+    font-weight: 600;
+    font-size: 16px;
+    background: linear-gradient(90deg, #e82a33, #f5b041);
+    border-radius: 14px;
+    padding: 10px;
+    width: fit-content;
+    margin: 10px auto;
+}
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #171010;
+    padding: 20px;
+    margin-top: 50px;
+}
+.footer1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+}
+.footerlogo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.bit{
+    color: #f5b041;
+        font-weight: 700;
+        font-size: 30px;
+}
+.footer1 p{
+    font-size: 12px;
+}
+.footer2{
+    display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+}
+.footer2>span{
+    font-weight: 700;
+    font-size: 16px;
+}
+.footerlinks{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+}
+.carddiv>img{
+    width: 20%;
+}
+.footerlinks>a{
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    font-size: 14px;
+}
+.socialmedia{
+    display: flex;
+    flex-direction: row;
+}
+.footer3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 5px;
+}
+footer a:hover{
+    background: linear-gradient(90deg, #e82a33, #f5b041);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.3s;
+}
+footer span:hover{
+    background: linear-gradient(90deg, #e82a33, #f5b041);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.3s;
+}
+footer i:hover{
+    background: linear-gradient(90deg, #e82a33, #f5b041);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.3s;
+}
+
+@media (max-width : 720px){
+    .btndiv>a{
+        padding: 12px 10px;
+        font-size: 14px;
+        border-radius: 6px;
+    }
+    .amtinput{
+        width: 65%;
+    }
+    .containergames{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
+    }
+    .usericon{
+        height: 130px;
+        width: 130px;
+    }
+    .main-fa {
+            font-size: 70px !important;
+     }
+     .message{
+        text-align: center;
+     }
+     .withdraw-form{
+        width: 90%;
+     } 
+     footer{
+        flex-direction: column;
+        gap: 50px;
+        padding: 20px;
+     }
+     .footerlogo{
+        margin-left: 50px;
+     }
+     .footer1{
+        width: 90%;
+        text-align: center;
+     }
+}
